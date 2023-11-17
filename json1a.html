@@ -1,0 +1,133 @@
+{
+    "identifier": 1,
+    "date": "2025-10-15",
+    "departureTime": "09:20 AM",
+    "arrivalTime": "11:30 AM",
+    "kilometersTraveled": 75
+  }
+  [
+  {"idWeather": 2, "condition": "Cloudy"},
+  {"idWeather": 1, "condition": "Windy"},
+  {"idWeather": 5, "condition": "Rainy"},
+  {"idWeather": 3, "condition": "Foggy"},
+  {"idWeather": 4, "condition": "Sunny"}
+]
+[
+  {"idTimeOfDay": 1, "condition": "Morning"},
+  {"idTimeOfDay": 2, "condition": "Afternoon"},
+  {"idTimeOfDay": 3, "condition": "Evening"}
+]
+
+
+[
+  {"idSignalStatus": 1, "condition": "Green"},
+  {"idSignalStatus": 2, "condition": "Yellow"},
+  {"idSignalStatus": 3, "condition": "Red"}
+]
+
+[
+  {"idScenicViews": 1, "condition": "Mountains"},
+  {"idScenicViews": 2, "condition": "Ocean"},
+  {"idScenicViews": 3, "condition": "Cityscape"}
+]
+
+[
+{"identifier":1,departure}
+]User
+[
+  {
+    "identifier": 1,
+    "date": "2025-10-15",
+    "departureTime": "09:20 AM",
+    "arrivalTime": "11:30 AM",
+    "kilometersTraveled": 75,
+    "weatherCondition":  "Cloudy",
+    "timeOfDayCondition": "Morning",
+    "signalStatusCondition":  "Green",
+    "scenicViewsCondition": "Mountains"
+  }
+]
+[
+  {
+    "identifier": 2,
+    "date": "2025-11-03",
+    "departureTime": "02:45 PM",
+    "arrivalTime": "05:15 PM",
+    "kilometersTraveled": 120,
+    "weatherCondition":  "Sunny",
+    "timeOfDayCondition": "Afternoon",
+    "signalStatusCondition":  "Yellow",
+    "scenicViewsCondition": "Ocean"
+  }
+]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Experiments</title>
+    <script>
+        // Assign JSON data to JS variables
+        let drivingExperiment1 = {
+            "identifier": 1,
+            "date": "2025-10-15",
+            "departureTime": "09:20 AM",
+            "arrivalTime": "11:30 AM",
+            "kilometersTraveled": 75,
+            "weatherCondition": "Cloudy",
+            "timeOfDayCondition": "Morning",
+            "signalStatusCondition": "Green",
+            "scenicViewsCondition": "Mountains"
+        };
+
+        let drivingExperiment2 = {
+            "identifier": 2,
+            "date": "2025-11-03",
+            "departureTime": "02:45 PM",
+            "arrivalTime": "05:15 PM",
+            "kilometersTraveled": 120,
+            "weatherCondition": "Sunny",
+            "timeOfDayCondition": "Afternoon",
+            "signalStatusCondition": "Yellow",
+            "scenicViewsCondition": "Ocean"
+        };
+
+        let weatherConditions = [
+            {"idWeather": 2, "condition": "Cloudy"},
+            {"idWeather": 1, "condition": "Windy"},
+            {"idWeather": 5, "condition": "Rainy"},
+            {"idWeather": 3, "condition": "Foggy"},
+            {"idWeather": 4, "condition": "Sunny"}
+        ];
+
+        let timeOfDayConditions = [
+            {"idTimeOfDay": 1, "condition": "Morning"},
+            {"idTimeOfDay": 2, "condition": "Afternoon"},
+            {"idTimeOfDay": 3, "condition": "Evening"}
+        ];
+
+        let signalStatusConditions = [
+            {"idSignalStatus": 1, "condition": "Green"},
+            {"idSignalStatus": 2, "condition": "Yellow"},
+            {"idSignalStatus": 3, "condition": "Red"}
+        ];
+
+        let scenicViewsConditions = [
+            {"idScenicViews": 1, "condition": "Mountains"},
+            {"idScenicViews": 2, "condition": "Ocean"},
+            {"idScenicViews": 3, "condition": "Cityscape"}
+        ];
+
+        // Display each JS variable using console.log
+        console.log(drivingExperiment1);
+        console.log(drivingExperiment2);
+        console.log(weatherConditions);
+        console.log(timeOfDayConditions);
+        console.log(signalStatusConditions);
+        console.log(scenicViewsConditions);
+    </script>
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+</body>
+</html>
